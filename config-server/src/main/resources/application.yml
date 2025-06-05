@@ -1,0 +1,17 @@
+
+server:
+  port: 8888
+
+
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:///Users/kowsikratnagiri/Documents/Product-app/config-repo
+          fail-fast: true
+          clone-on-start: true
