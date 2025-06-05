@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: gateway-service  # name in config-repo (gateway-service.yml)
+
+  cloud:
+    config:
+      uri:  "optional:configserver:http://localhost:8888"   #  URL of your config server
+
+eureka:
+      health.enabled: true
+
+server:
+    port: 8081  # port for the gateway service

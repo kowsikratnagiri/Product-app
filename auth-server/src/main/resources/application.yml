@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: auth-server  # name in config-repo (auth-server.yml)
+  config:
+    import: "optional:configserver:http://localhost:8888"
+
+eureka:
+  health.enabled: true

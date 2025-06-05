@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: user-service  # name in config-repo (user-service.yml)
+  config:
+    import: "optional:configserver:http://localhost:8888"
