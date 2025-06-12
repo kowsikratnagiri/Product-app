@@ -46,3 +46,9 @@ eureka:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     non-secure-port: ${server.port}
 
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+
+jwt:
+  secret: your-256-bit-secret-your-256-bit-secret

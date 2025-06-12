@@ -28,17 +28,6 @@ public class UserService implements UserDetailsService {
         );
     }
 
-    @Bean
-    CommandLineRunner run(UserRepository userRepo, PasswordEncoder encoder) {
-        return args -> {
-            if (userRepo.findByUsername("john").isEmpty()) {
-                User user = new User();
-                user.setUsername("john");
-                user.setPassword(encoder.encode("password123"));
-                user.setRole("ROLE_USER");
-                userRepo.save(user);
-            }
-        };
-    }
+
 
 }
