@@ -1,1 +1,1 @@
-MicroService Application for Ecommerce site
+MicroService Application for Ecommerce website
