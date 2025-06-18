@@ -1,11 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'MAVEN_HOME'  // Configure in Jenkins Global Tools
-        jdk 'JAVA_HOME'
-    }
-
     environment {
         MVN_OPTS = '-DskipTests'
     }
