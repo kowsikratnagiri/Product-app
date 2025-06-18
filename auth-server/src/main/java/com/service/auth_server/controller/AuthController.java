@@ -47,7 +47,7 @@ public class AuthController {
                     .body(Map.of("error", "Unauthorized", "message", ex.getMessage()));
         }
     }
-
+///API to register the User
     @PostMapping("/register")
     public ResponseEntity<?> register(@RequestBody AuthRequest request) {
         if (userRepository.findByUsername(request.getUsername()).isPresent()) {
